@@ -1,0 +1,16 @@
+INCLUDE options/options.makejail
+
+ARG alpine_linux_major=3
+ARG alpine_linux_minor=17
+ARG alpine_linux_patch_level=2
+ARG alpine_linux_arch=x86_64
+
+ADD https://dl-cdn.alpinelinux.org/alpine/v${alpine_linux_major}.${alpine_linux_minor}/releases/${alpine_linux_arch}/alpine-minirootfs-${alpine_linux_major}.${alpine_linux_minor}.${alpine_linux_patch_level}-${alpine_linux_arch}.tar.gz
+
+START
+
+CMD apk update && apk upgrade
+
+STAGE cmd
+
+CMD /bin/sh
