@@ -59,5 +59,5 @@ Your ruleset must unhide `shm` and `shm/*`.
 
 * `alpine_linux_major` (default: `3`).
 * `alpine_linux_minor` (default: `17`).
-* `alpine_linux_patch_level` (default: `2`).
+* `alpine_linux_patch_level` (default: `3`).
 * `alpine_linux_arch` (default: `x86_64`).
