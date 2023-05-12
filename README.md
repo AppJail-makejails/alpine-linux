@@ -55,6 +55,12 @@ appjail makejail -j alpine -- --network development --ruleset 11
 
 Your ruleset must unhide `shm` and `shm/*`.
 
+After Makejail builds the jail, you can run Alpine Linux using the `alpine_shell` custom stage:
+
+```sh
+appjail run -s alpine_shell alpine
+```
+
 ### Arguments
 
 * `alpine_linux_major` (default: `3`).

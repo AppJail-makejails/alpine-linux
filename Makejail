@@ -11,6 +11,6 @@ START
 
 CMD apk update && apk upgrade
 
-STAGE cmd
+STAGE custom:alpine_shell
 
 CMD /bin/sh
