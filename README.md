@@ -87,9 +87,10 @@ Build the jail:
 appjail makejail -j alpine -- --ruleset 11
 ```
 
-Stop and export the jail:
+Set the jail architecture as `appjail image export` requires it and export it.
 
 ```sh
+appjail-config set -Vt "/usr/local/appjail/jails/alpine/conf/config.conf" osarch="amd64"
 appjail image export alpine
 ```
 
