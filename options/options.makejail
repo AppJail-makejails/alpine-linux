@@ -1,4 +1,3 @@
-OPTION empty
 OPTION linuxfs
 OPTION resolv_conf
 OPTION tzdata
