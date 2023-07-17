@@ -102,6 +102,6 @@ appjail image export alpine
 
 ## Tags
 
-| Tag             | Type      | `alpine_linux_major` | `alpine_linux_minor` | `alpine_linux_patch_level` | `alpine_linux_arch` |
-| --------------- | --------- | -------------------- | -------------------- | -------------------------- | ------------------- |
-| `3.18.2-x86_64` | `generic` |          3           |          18          |              2             |        x86\_64      |
+| Tag             | Arch    | Type      | `alpine_linux_major` | `alpine_linux_minor` | `alpine_linux_patch_level` | `alpine_linux_arch` |
+| --------------- | ------- | --------- | -------------------- | -------------------- | -------------------------- | ------------------- |
+| `3.18.2-x86_64` | `amd64` | `generic` |          3           |          18          |              2             |        x86\_64      |
