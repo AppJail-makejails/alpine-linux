@@ -65,7 +65,7 @@ appjail run -s alpine_shell alpine
 
 ### Arguments
 
-* `alpine_linux_tag` (default: `3.18.2-x86_64`): see [#tags](#tags).
+* `alpine_linux_tag` (default: `3.18.3-x86_64`): see [#tags](#tags).
 
 ## How to build the Image
 
@@ -98,11 +98,11 @@ appjail image export alpine
 
 * `alpine_linux_major` (default: `3`).
 * `alpine_linux_minor` (default: `18`).
-* `alpine_linux_patch_level` (default: `2`).
+* `alpine_linux_patch_level` (default: `3`).
 * `alpine_linux_arch` (default: `x86_64`).
 
 ## Tags
 
 | Tag             | Arch    | Type      | `alpine_linux_major` | `alpine_linux_minor` | `alpine_linux_patch_level` | `alpine_linux_arch` |
 | --------------- | ------- | --------- | -------------------- | -------------------- | -------------------------- | ------------------- |
-| `3.18.2-x86_64` | `amd64` | `generic` |          3           |          18          |              2             |        x86\_64      |
+| `3.18.3-x86_64` | `amd64` | `generic` |          3           |          18          |              3             |        x86\_64      |
