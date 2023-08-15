@@ -1,9 +1,7 @@
-tags: 3.18.2-x86_64
-3.18.2-x86_64.arch: amd64
-3.18.2-x86_64.name: "alpine"
-3.18.2-x86_64.timestamp.amd64: 1691175535
-3.18.2-x86_64.sum.amd64: 4296f9b6c3420a478d1e82c38dbfc5beb95612f8c5429097394845abc24c79f6
-3.18.2-x86_64.size.amd64: 2668240
-3.18.2-x86_64.source.amd64: https://dtxdf.duckdns.org/RcA6O562zc/alpine_3_18_2_x86_64_amd64_image_appjail
-3.18.2-x86_64.source.amd64+: https://storm-bsd.duckdns.org/RcA6O562zc/alpine_3_18_2_x86_64_amd64_image_appjail
-3.18.2-x86_64.source.amd64+: https://anonget.onrender.com/RcA6O562zc/alpine_3_18_2_x86_64_amd64_image_appjail
+tags: 3.18.3-x86_64
+3.18.3-x86_64.arch: amd64
+3.18.3-x86_64.name: "alpine"
+3.18.3-x86_64.timestamp.amd64: 1692047603
+3.18.3-x86_64.sum.amd64: b4590dde0e9941268cd2fc1803d0df57cbd0cd9b4818501d032f5f66f7afc26c
+3.18.3-x86_64.size.amd64: 2666468
+3.18.3-x86_64.source.amd64: https://transfer.sh/gRBfIt0QTP/alpine-3.18.3-x86_64-amd64-image.appjail
