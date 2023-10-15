@@ -65,7 +65,7 @@ appjail run -s alpine_shell alpine
 
 ### Arguments
 
-* `alpine_linux_tag` (default: `3.18.3-x86_64`): see [#tags](#tags).
+* `alpine_linux_tag` (default: `3.18.4-x86_64`): see [#tags](#tags).
 
 ## How to build the Image
 
