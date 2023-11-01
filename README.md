@@ -56,11 +56,11 @@ appjail image export alpine
 
 * `alpine_linux_major` (default: `3`).
 * `alpine_linux_minor` (default: `18`).
-* `alpine_linux_patch_level` (default: `3`).
+* `alpine_linux_patch_level` (default: `4`).
 * `alpine_linux_arch` (default: `x86_64`).
 
 ## Tags
 
 | Tag             | Arch    | Type      | `alpine_linux_major` | `alpine_linux_minor` | `alpine_linux_patch_level` | `alpine_linux_arch` |
 | --------------- | ------- | --------- | -------------------- | -------------------- | -------------------------- | ------------------- |
-| `3.18.3-x86_64` | `amd64` | `generic` |          3           |          18          |              3             |        x86\_64      |
+| `3.18.4-x86_64` | `amd64` | `generic` |          3           |          18          |              4             |        x86\_64      |
