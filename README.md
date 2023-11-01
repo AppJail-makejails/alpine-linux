@@ -8,54 +8,25 @@ wikipedia.org/wiki/Alpine\_Linux
 
 ## How to use this Makejail
 
-```
-INCLUDE options/network.makejail
-INCLUDE gh+Appjail-makejails/alpine-linux
-
-ARG ruleset=0
-
-OPTION template=files/linux.conf
-OPTION devfs_ruleset=${ruleset}
-```
-
-Where `options/network.makejail` are the options that suit your environment, for example:
-
-```
-ARG network?
-ARG interface=appjail0
-
-OPTION alias=${interface}
-OPTION virtualnet=${network} default
-OPTION nat
-```
-
-In the above example `appjail0` is a loopback interface, so it must first exist before creating the jail.
-
-The `files/linux.conf` template is as follows:
-
-```
-exec.start: /bin/true
-exec.stop: /bin/true
-persist
-```
-
 Alpine Linux is a generic jail, so AppJail does not know which modules to use, so we need to manually load them before creating the jail.
 
 ```sh
 kldload linux linux64 fdescfs tmpfs linprocfs linsysfs pty
 ```
 
-Use `loader.conf(5)` to load them at startup.
+**Note**: Use `loader.conf(5)` to load them at startup.
 
 Open a shell and run `appjail makejail`:
 
 ```sh
-appjail makejail -j alpine -- --ruleset 11
-# or use a network explicitly
-appjail makejail -j alpine -- --network development --ruleset 11
+appjail makejail -j alpine -f gh+AppJail-makejails/alpine-linux \
+    -o template=/usr/local/share/examples/appjail/templates/linux.conf \
+    -o alias
+    -o virtualnet=":appjail0 default" \
+    -o nat
 ```
 
-Your ruleset must unhide `shm` and `shm/*`.
+**Tip**: Read [Alias & Virtual Networks](https://appjail.readthedocs.io/en/latest/networking/virtual-networks/alias-and-virtual-networks/) to see how to create the `appjail0` interface.
 
 After Makejail builds the jail, you can run Alpine Linux using the `alpine_shell` custom stage:
 
@@ -69,22 +40,9 @@ appjail run -s alpine_shell alpine
 
 ## How to build the Image
 
-Make any changes you want to your image.
-
-```
-INCLUDE options/network.makejail
-INCLUDE gh+AppJail-makejails/alpine --file build.makejail
-
-ARG ruleset=0
-
-OPTION template=files/linux.conf
-OPTION devfs_ruleset=${ruleset}
-```
-
-Build the jail:
-
 ```sh
-appjail makejail -j alpine -- --ruleset 11
+appjail makejail -j alpine -f "gh+AppJail-makejails/alpine-linux --file build.makejail" \
+    -o template=/usr/local/share/examples/appjail/templates/linux.conf \
 ```
 
 Set the jail architecture as `appjail image export` requires it and export it.
