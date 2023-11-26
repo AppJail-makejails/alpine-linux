@@ -38,27 +38,6 @@ appjail run -s alpine_shell alpine
 
 * `alpine_linux_tag` (default: `3.18.4-x86_64`): see [#tags](#tags).
 
-## How to build the Image
-
-```sh
-appjail makejail -j alpine -f "gh+AppJail-makejails/alpine-linux --file build.makejail" \
-    -o template=/usr/local/share/examples/appjail/templates/linux.conf \
-```
-
-Set the jail architecture as `appjail image export` requires it and export it.
-
-```sh
-appjail-config set -Vt "/usr/local/appjail/jails/alpine/conf/config.conf" osarch="amd64"
-appjail image export alpine
-```
-
-### Arguments
-
-* `alpine_linux_major` (default: `3`).
-* `alpine_linux_minor` (default: `18`).
-* `alpine_linux_patch_level` (default: `4`).
-* `alpine_linux_arch` (default: `x86_64`).
-
 ## Tags
 
 | Tag             | Arch    | Type      | `alpine_linux_major` | `alpine_linux_minor` | `alpine_linux_patch_level` | `alpine_linux_arch` |
