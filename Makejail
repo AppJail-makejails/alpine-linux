@@ -4,7 +4,7 @@ INCLUDE options/options.makejail
 
 ARG alpine_linux_tag=3.18.4-x86_64
 
-FROM --entrypoint gh+AppJail-makejails/alpine-linux alpine:${alpine_linux_tag}
+FROM --entrypoint gh+AppJail-makejails/alpine-linux alpine-linux:${alpine_linux_tag}
 
 CMD apk update && apk upgrade
 
