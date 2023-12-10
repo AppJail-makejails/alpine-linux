@@ -21,7 +21,7 @@ Open a shell and run `appjail makejail`:
 ```sh
 appjail makejail -j alpine -f gh+AppJail-makejails/alpine-linux \
     -o template=/usr/local/share/examples/appjail/templates/linux.conf \
-    -o alias
+    -o alias \
     -o virtualnet=":appjail0 default" \
     -o nat
 ```
