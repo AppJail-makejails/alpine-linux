@@ -42,4 +42,4 @@ appjail run -s alpine_shell alpine
 
 | Tag             | Arch    | Type      | `alpine_linux_major` | `alpine_linux_minor` | `alpine_linux_patch_level` | `alpine_linux_arch` |
 | --------------- | ------- | --------- | -------------------- | -------------------- | -------------------------- | ------------------- |
-| `3.19.0-x86_64` | `amd64` | `generic` |         `3`          |         `18`         |             `5`            |       `x86\_64`     |
+| `3.19.0-x86_64` | `amd64` | `generic` |         `3`          |         `19`         |             `0`            |       `x86\_64`     |
