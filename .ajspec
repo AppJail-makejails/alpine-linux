@@ -1,8 +1,8 @@
-tags: 3.19.1-x86_64
-3.19.1-x86_64.arch: amd64
-3.19.1-x86_64.name: "alpine-linux"
-3.19.1-x86_64.timestamp.amd64: 1715841393
-3.19.1-x86_64.sum.amd64: 5770a24f72e6947676c8f13ff1d6272d5d3cb916e5416a39c82417ff4fb6043b
-3.19.1-x86_64.size.amd64: 3384586
-3.19.1-x86_64.source.amd64: "http://appjail.hpc.at/alpine-linux/3.19.1-x86_64-amd64-image.appjail"
-3.19.1-x86_64.source.amd64+: "https://images.all101bsd.download/alpine-linux/3.19.1-x86_64-amd64-image.appjail"
+tags: 3.20.0-x86_64
+3.20.0-x86_64.arch: amd64
+3.20.0-x86_64.name: "alpine-linux"
+3.20.0-x86_64.timestamp.amd64: 1718264389
+3.20.0-x86_64.sum.amd64: 80f9f2cdd10b9070cc6e6e6e1284811a316fbc9e1ceb86be5424c8b62568c903
+3.20.0-x86_64.size.amd64: 3598869
+3.20.0-x86_64.source.amd64: "http://appjail.hpc.at/alpine-linux/3.20.0-x86_64-amd64-image.appjail"
+3.20.0-x86_64.source.amd64+: "https://images.all101bsd.download/alpine-linux/3.20.0-x86_64-amd64-image.appjail"
