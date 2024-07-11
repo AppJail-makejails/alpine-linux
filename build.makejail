@@ -2,7 +2,7 @@ INCLUDE options/build-options.makejail
 
 ARG alpine_linux_major=3
 ARG alpine_linux_minor=20
-ARG alpine_linux_patch_level=0
+ARG alpine_linux_patch_level=1
 ARG alpine_linux_arch=x86_64
 
 ADD https://dl-cdn.alpinelinux.org/alpine/v${alpine_linux_major}.${alpine_linux_minor}/releases/${alpine_linux_arch}/alpine-minirootfs-${alpine_linux_major}.${alpine_linux_minor}.${alpine_linux_patch_level}-${alpine_linux_arch}.tar.gz
