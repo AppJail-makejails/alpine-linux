@@ -38,7 +38,7 @@ appjail run -s alpine_shell alpine
 
 ### Arguments
 
-* `alpine_linux_tag` (default: `%%MEJOR%%.%%MINOR%%.%%PATCH%%-x86_64`): see [#tags](#tags).
+* `alpine_linux_tag` (default: `%%MAJOR%%.%%MINOR%%.%%PATCH%%-x86_64`): see [#tags](#tags).
 * `alpine_linux_ajspec` (default: `gh+AppJail-makejails/alpine-linux`): Entry point where the `appjail-ajspec(5)` file is located.
 
 ## Tags
