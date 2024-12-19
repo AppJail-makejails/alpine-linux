@@ -1,8 +1,9 @@
 tags+: 3.21.0-x86_64
 3.21.0-x86_64.arch: amd64
 3.21.0-x86_64.name: "alpine-linux"
-3.21.0-x86_64.timestamp.amd64: 1734389134
-3.21.0-x86_64.sum.amd64: cd1be9eba3475bbd812ed333ef48d0329e6818711ce003f875b1404b070b1232
+3.21.0-x86_64.timestamp.amd64: 1734583369
+3.21.0-x86_64.sum.amd64: 872244f49b52a616547bdb03f2b3f3cd382937e92b7e108781b1ba9600990336
 3.21.0-x86_64.size.amd64: 3619381
 3.21.0-x86_64.source.amd64: "http://appjail.hpc.at/alpine-linux/3.21.0-x86_64-amd64-image.appjail"
 3.21.0-x86_64.source.amd64+: "https://images.all101bsd.download/alpine-linux/3.21.0-x86_64-amd64-image.appjail"
+maintenance: "This image is uploading, please wait a moment and try again. If you are importing this image using a Makejail that has the '--<name>_ajspec' argument, you can use the 'reproduce' method to use 'appjail-reproduce'. See 'appjail-image(5)' for details."
