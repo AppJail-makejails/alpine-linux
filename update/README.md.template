@@ -38,11 +38,11 @@ appjail run -s alpine_shell alpine
 
 ### Arguments
 
-* `alpine_linux_tag` (default: `%%MAJOR%%.%%MINOR%%.%%PATCH%%-x86_64`): see [#tags](#tags).
+* `alpine_linux_tag` (default: `latest`): see [#tags](#tags).
 * `alpine_linux_ajspec` (default: `gh+AppJail-makejails/alpine-linux`): Entry point where the `appjail-ajspec(5)` file is located.
 
 ## Tags
 
-| Tag             | Arch    | Type      | `alpine_linux_major` | `alpine_linux_minor` | `alpine_linux_patch_level` | `alpine_linux_arch` |
-| --------------- | ------- | --------- | -------------------- | -------------------- | -------------------------- | ------------------- |
-| `%%MAJOR%%.%%MINOR%%.%%PATCH%%-x86_64` | `amd64` | `generic` |         `%%MAJOR%%`          |         `%%MINOR%%`         |             `%%PATCH%%`            |       `x86\_64`     |
+| Tag       | Arch    | Type      | `alpine_linux_major` | `alpine_linux_minor` | `alpine_linux_patch_level` | `alpine_linux_arch` |
+| --------- | ------- | --------- | -------------------- | -------------------- | -------------------------- | ------------------- |
+| `latest`  | `amd64` | `generic` | `%%MAJOR%%`          | `%%MINOR%%`          | `%%PATCH%%`                | `x86\_64`           |
