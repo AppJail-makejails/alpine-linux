@@ -8,9 +8,6 @@ BASEDIR=`realpath -- "${BASEDIR}"` || exit $?
 set -xe
 set -o pipefail
 
-cat -- "${BASEDIR}/Makejail.template" |\
-    sed -Ee "s/%%TAG1%%/${TAG1}/g" > "${BASEDIR}/../Makejail"
-
 cat -- "${BASEDIR}/README.md.template" |\
     sed -E \
         -e "s/%%MAJOR%%/${MAJOR}/g" \

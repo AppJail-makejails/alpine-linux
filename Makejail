@@ -2,7 +2,7 @@ OPTION start
 
 INCLUDE options/options.makejail
 
-ARG alpine_linux_tag=3.21.0-x86_64
+ARG alpine_linux_tag=latest
 ARG alpine_linux_ajspec=gh+AppJail-makejails/alpine-linux
 
 FROM --entrypoint "${alpine_linux_ajspec}" alpine-linux:${alpine_linux_tag}
