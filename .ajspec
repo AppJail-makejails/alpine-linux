@@ -5,4 +5,3 @@ latest.timestamp.amd64: 1771706828
 latest.sum.amd64: 5fb4a9dbf5f55075010e7e890e0a0fef0c2180626560a57c88ce8e4b241d19a5
 latest.size.amd64: 3626064
 latest.source.amd64: "http://appjail.hpc.at/alpine-linux/latest-amd64-image.appjail"
-maintenance: "This image is uploading, please wait a moment and try again. If you are importing this image using a Makejail that has the '--<name>_ajspec' argument, you can use the 'reproduce' method to use 'appjail-reproduce'. See 'appjail-image(5)' for details."
